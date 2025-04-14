@@ -1,9 +1,6 @@
 FROM php:8.4.6-fpm-bullseye as app
 
-RUN apt-get update && apt-get install -y \
-   zlib1g-dev \
-   lizip-dev \
-   unzip
+#RUN apt-get update && apt-get install -y    zlib1g-dev   lizip-dev    unzip
 
 COPY --from=mlocati/php-extension-installer /usr/bin/install-php-extensions /usr/local/bin/
 
