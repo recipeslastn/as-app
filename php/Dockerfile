@@ -1,4 +1,4 @@
-FROM php:8.4.6-fpm-bullseye as app
+FROM php:8.4.6-fpm-alpine as app
 
 #RUN apt-get update && apt-get install -y    zlib1g-dev   lizip-dev    unzip
 
